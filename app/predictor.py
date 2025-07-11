@@ -1,11 +1,14 @@
-import joblib
 import pandas as pd
+import joblib
 
-heart_model = joblib.load("C:\\Users\\abina\\Desktop\\Health-risk-predictor\\models\\heart_model.pkl")
-diabetes_model = joblib.load("C:\\Users\\abina\\Desktop\\Health-risk-predictor\\models\\diabetes_model.pkl")
+# ✅ Use relative paths instead of full Windows paths
+heart_model = joblib.load("models/heart_model.pkl")
+diabetes_model = joblib.load("models/diabetes_model.pkl")
 
 def predict_heart(input_dict):
-    return heart_model.predict(pd.DataFrame([input_dict]))[0]
+    input_df = pd.DataFrame([input_dict])
+    return heart_model.predict(input_df)[0]
 
 def predict_diabetes(input_dict):
-    return diabetes_model.predict(pd.DataFrame([input_dict]))[0]
+    input_df = pd.DataFrame([input_dict])
+    return diabetes_model.predict(input_df)[0]
