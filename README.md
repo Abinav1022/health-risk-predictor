@@ -19,7 +19,7 @@ This Streamlit app predicts risk for **Heart Disease** and **Diabetes** using ma
 - SHAP for local feature importance
 
 ## 🌐 Live App
-👉 [Click here to open the app](https://your-username-health-risk-predictor.streamlit.app/)
+👉 [Click here to open the app](https://abinav.streamlit.app/)
 
 ## 🧑‍💻 Author
 Made with ❤️ by Abinav S
